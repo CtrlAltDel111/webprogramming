@@ -1,0 +1,9 @@
+git config --global user.name ”Ivan Ivanov”		//Настройка пользователя для всех проектов
+git config --global user.email ivan.ivanov@gmail.com	//Если бурать --global - настройка для текущего проекта
+
+git init //создание репозитория в текущем каталоге
+
+git status // Статус работы на данный момент (untracked, staged, modifier, commited)
+
+git log // Ну тут всё логично
+

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        ul :nth-child(odd) {
+            background-color: turquoise;
+        }
+        ul :nth-child(even) {
+            background-color: rgb(53, 182, 169);
+        }
+        ul {
+            list-style-position: inside;
+        }
+        li {
+            list-style: url(unchecked.png);            
+            padding: 10px;
+        }
+        #check {
+            list-style-image: url(checked.png);
+            text-decoration: line-through;
+            background-color: thistle;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Hit the gym</li>
+        <li id="check">Pay bills</li>
+        <li>Meet John</li>
+        <li>Buy eggs</li>
+        <li id="check">Read a book</li>
+        <li>Organize office</li>
+        <li>Eat dinner</li>
+        <li>Buy apples</li>
+        <li>Meet george</li>
+        <li>Feed the cat</li>
+        <li id="check">Write a letter</li>
+        <li>Run 1 km</li>
+    </ul>
+</body>
+</html>

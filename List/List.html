@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main {
+            width: 400px;
+        }
+        h1 {
+            font-size: 20pt;
+            text-align: start;
+            padding: 10px 40px;
+        }
+
+        ul :nth-child(odd) {
+            background-color: turquoise;
+        }
+        ul :nth-child(even) {
+            background-color: rgb(53, 182, 169);
+        }
+        li {
+            list-style: inside url(unchecked.png);            
+            padding: 10px 40px;
+
+        }        
+        #check {
+            list-style-image: url(checked.png);
+            text-decoration: line-through;
+            background-color: thistle;
+        }
+        li:before {
+            content: "";
+            margin-right: 10px;
+        } 
+        li:after {
+            /* background-image: url('krest.png');
+            background-size: 16px 16px; */
+            display: inline-block;
+            width: 20px; 
+            height: 16px;
+            content:url(krest.png);
+            vertical-align: bottom;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>My To Do List</h1>
+    <ul>
+        <li>Hit the gym </li>
+        <li id="check">Pay bills</li>
+        <li>Meet John</li>
+        <li>Buy eggs</li>
+        <li id="check">Read a book</li>
+        <li>Organize office</li>
+        <li>Eat dinner</li>
+        <li>Buy apples</li>
+        <li>Meet george</li>
+        <li>Feed the cat</li>
+        <li id="check">Write a letter</li>
+        <li>Run 1 km</li>
+    </ul>
+</main>
+</body>
+</html>
